@@ -19,7 +19,7 @@ header {
 
 a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: black;
 }
 
@@ -152,13 +152,18 @@ fieldset {
 }
 
 @media only screen and (min-width:320px) and (max-width:767px) {
+    a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: black;
+    }
     body {
         background: rgb(208,173,213);
         background: linear-gradient(90deg, rgba(208,173,213,1) 0%, rgba(163,148,184,1) 50%, rgba(180,139,132,1) 100%);
     }
     
     header {
-        height: 22vh;
+        height: 24vh;
     }
 
     .boxbanner {
@@ -182,6 +187,7 @@ fieldset {
     .imageNtext {
         flex-direction: column;
         font-size: 1rem;
+        text-align: center;
     }
 
     .imageNtext img {
@@ -202,7 +208,13 @@ fieldset {
     .imagenYlista {
         flex-direction: column;
         gap: 0;
+        width: 60vw;
+        align-items: center;
+    }
 
+    .imagenYlista img{
+        object-fit: contain;
+        width: 60vw;
     }
 
     .cajaraffle{
@@ -223,4 +235,55 @@ fieldset {
     .cajaraffle{
         width: 95vw;
     }
+
+    header {
+        height: 30vh;
+    }
+
+    .boxbanner {
+        flex-direction: column;
+    }
+
+    .textNimageIndex {
+        flex-direction: column-reverse;
+        font-size: 1rem;
+    }
+
+    .textNimageIndex img {
+        object-fit: contain;
+        width: 80vw;
+    }
+    
+    .imageNtext {
+        flex-direction: column;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .imageNtext img {
+        object-fit: contain;
+    }
+
+    .imagenYlista {
+        flex-direction: column;
+        gap: 0;
+        width: 12.5rem;
+        align-items: center;
+    }
+
+    .imagenYlista img{
+        object-fit: contain;
+    }
+
+    .cajaraffle{
+        flex-direction: column-reverse;
+        width: 60vw;
+
+    }
+
+    iframe {
+        width: 60vw;
+        height: 30vh;
+    }
+
 }

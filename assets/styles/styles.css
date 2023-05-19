@@ -1,0 +1,226 @@
+* {  
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(249,206,255);
+    background: linear-gradient(90deg, rgba(249,206,255,1) 0%, rgba(161,145,182,1) 50%, rgba(255,197,187,1) 100%);
+}
+
+header {
+    display: flex;
+    border: .2rem solid rgb(104 70 133);
+    background: rgb(254,167,213);
+    background: linear-gradient(90deg, rgba(254,167,213,1) 0%, rgba(223,187,113,1) 50%, rgba(235,154,123,1) 100%);
+    height: 10vh;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+
+.boxbanner {
+    padding: .5rem;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+.logo {
+    height: 4rem;
+    width: 4rem;
+    object-fit: contain;
+    padding: .5rem;
+}
+
+main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background: rgb(254,167,213);
+    background: linear-gradient(90deg, rgba(254,167,213,1) 0%, rgba(223,187,113,1) 50%, rgba(235,154,123,1) 100%);
+    border: .2rem solid rgb(104 70 133);
+    text-align: center;
+    height: 10vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}  
+
+.largeimageIndex {
+    height: 11rem;
+    width: 65rem;
+    object-fit: cover;
+}
+
+.textNimageIndex {
+    width: 81.2vw;
+    display: flex;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.textNimageIndex img{
+    object-fit: cover;
+    height: 12rem;
+    width: 30rem;
+}
+
+.imageNtext {
+    display: flex;
+    width: 70vw;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.imageNtext img{
+    height: 10rem;
+    margin-right: 1rem;
+}
+
+.textNcontact {
+    display: flex;
+    font-size: 1.5rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.textNcontact img {
+    height: 25rem;
+    object-fit: contain;
+}
+
+.contactbox {
+    display: flex;
+    width: 50vw;
+    justify-content: space-between;
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+    text-align: center;
+    border: .3rem solid rgb(238, 102, 11);
+    font-size: 2.5rem;
+    margin: 4rem;
+}
+
+.imagenYlista {
+    display: flex;
+    gap: 8rem;
+    width: 70vw;
+}
+
+.imagenYlista img {
+    height: 10rem;
+    margin-top: .5rem;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ol {
+    list-style-type: none;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cajaraffle {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+    body {
+        background: rgb(208,173,213);
+        background: linear-gradient(90deg, rgba(208,173,213,1) 0%, rgba(163,148,184,1) 50%, rgba(180,139,132,1) 100%);
+    }
+    
+    header {
+        height: 22vh;
+    }
+
+    .boxbanner {
+        flex-direction: column;
+    }
+
+    .largeimageIndex {
+        width: 95vw;
+    }
+
+    .textNimageIndex {
+        flex-direction: column-reverse;
+        font-size: 1rem;
+    }
+
+    .textNimageIndex img {
+        width: 80vw;
+        object-fit: contain;
+    }
+
+    .imageNtext {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .imageNtext img {
+        object-fit: contain;
+    }
+
+    .contactbox{
+        width: 80vw;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    table, tr, th, td {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .imagenYlista {
+        flex-direction: column;
+        gap: 0;
+
+    }
+
+    .cajaraffle{
+        flex-direction: column-reverse
+    }
+
+    iframe {
+        width: 60vw;
+        height: 25vh;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .largeimageIndex {
+        width: 90vw;
+    }
+
+    .cajaraffle{
+        width: 95vw;
+    }
+}
